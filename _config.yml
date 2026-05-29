@@ -1,0 +1,19 @@
+# Site settings
+title: Sylvain Le Liepvre blog
+email: 
+description: "Ideas and thoughts for a better world"
+baseurl: ""
+url: "https://sylllp.github.io"
+linkedin_url: "https://www.linkedin.com/in/sylvain-le-liepvre-a4575584/"
+github_username: sylllp
+disqus_shortname: sylllp-blog
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

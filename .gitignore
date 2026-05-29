@@ -1,0 +1,30 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler (local gems — do not commit)
+vendor/
+.bundle/
+
+# Ruby
+*.gem
+
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+
+# Editor / IDE
+*.swp
+*~
+.idea/
+.vscode/
+
+# Optional tooling
+node_modules/
