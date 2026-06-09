@@ -4,7 +4,7 @@ comments: true
 title: "Why are we sick?"
 excerpt: "Exploring where, when and why the machine breaks."
 date:   2026-05-29 07:00:00
-mathjax: true
+mermaid: true
 ---
 
 <style>
@@ -174,7 +174,7 @@ flowchart TB
     irritants["<b>Physically active</b>
     Irritants, dust, PM10, nanoparticles & fibers"]
     chemicals["<b>Chemically active</b>
-    Solvants, drugs, "]
+    Solvants, drugs "]
     virus["<b> Biologically active</b>
     Virus, bacteries, fungi, ..."]
     
@@ -214,7 +214,7 @@ This approach has been further developed from 150 variables up to 10,000 variabl
 More recently, the field of Network Physiology has emerged to address how physiological systems synchronize and integrate their dynamics as a network to optimize functions and to maintain health <a href="#ref-18">[18]</a>. 
 One limitation of this field is the lack of representation for cognition, motivation, immune regulation. Systems medicine is an interdisciplinary field of study that looks at the systems of the human body as part of an integrated whole, incorporating biochemical, physiological, and environmental interactions <a href="#ref-19">[19]</a>. But for now, it seems that no single canonical figure has yet integrated psychology and physiology in a high-level yet precise representation of the body.
 
-# Summary
+## Summary
 
 The body could be viewed as a self-maintaining machine with inputs, outputs and a control system. Failure can be caused by environmental, operational, manufacturing and design-induced diseases. Exposition to harmful physically, chemically or biologically active agents can generate operational-induced (consented exposition) or environmental-induced (non-consented exposition) diseases. Harmful agents can penetrate the body through air, food, water, skin. Organs and other systems of the body can break with out-of-specification inputs (toxic chemicals, wrong concentration, nano/micro-particles) or inappropriate commands in comparison to system capabilities. Hereditary or acquired DNA anomalies can lead to design-induced and manufacturing-induced diseases.
 Lack of motivation for survival or reproduction can lead to consented exposition to harmful agents, lack of physical activity that will in turn lead to diseases with the decrease of system capabilities increasing the risk of inappropriate commands.
@@ -243,7 +243,7 @@ flowchart TB
 The next question for me is: what does the healthcare system do today to manage people's health, and what could we do to improve it? This question will be explored in the next post, stay tuned for part 2!
 
 
-# Bibliography
+## Bibliography
 
 <p id="ref-1"><strong>[1]</strong> https://en.wikipedia.org/wiki/Nosology</p>
 <p id="ref-2"><strong>[2]</strong> Smart, Benjamin. "On the classification of diseases." Theoretical Medicine and Bioethics 35.4 (2014): 251-269.</p>
