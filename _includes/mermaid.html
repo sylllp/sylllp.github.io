@@ -3,17 +3,32 @@
   .mermaid { text-align: center; margin: 20px 0; overflow-x: auto; }
   .mermaid svg { max-width: 100%; height: auto; }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.4.3/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
 <script>
-  mermaid.initialize({
-    startOnLoad: false,
-    theme: 'default',
-    securityLevel: 'loose',
-    flowchart: {
-      useMaxWidth: true,
-      htmlLabels: true
-    }
-  });
-  mermaid.init(undefined, document.querySelectorAll('pre code.language-mermaid'));
+  (function () {
+    var codes = document.querySelectorAll('pre > code.language-mermaid');
+    if (!codes.length) return;
+
+    var nodes = [];
+    codes.forEach(function (code) {
+      var pre = code.parentElement;
+      var div = document.createElement('div');
+      div.className = 'mermaid';
+      // textContent decodes Jekyll's HTML entities (&lt;b&gt; → <b>)
+      div.textContent = code.textContent.trim();
+      pre.replaceWith(div);
+      nodes.push(div);
+    });
+
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: 'loose',
+      flowchart: { htmlLabels: true, useMaxWidth: true }
+    });
+
+    mermaid.run({ nodes: nodes }).catch(function (err) {
+      console.error('Mermaid render error:', err);
+    });
+  })();
 </script>
 {% endif %}
