@@ -35,7 +35,7 @@ In short, it seems there are multiple ways to classify diseases: by cause (etiol
 In our case our objective is to prepare a reflexion on preventive actions to avoid breaking the machine. This objective requires identification of causes or pathogenesis of diseases, therefore in this work we will prefer focusing on classification by causes first and pathogenesis if needed.
 But hey wait, <b>what can break?</b>
 
-### The self-maintaining machine
+## The self-maintaining machine
 Let's consider the body as a self-maintaining machine that converts environmental resources (air, water, food) into useful work while continuously regulating itself through feedback control, and represent this with a good old block diagram. It is very simplified and a lot is lacking, but it gives an overview of the whole picture. Basically all cells need O2 and nutrients to function (<span style="color: blue;">blue arrows</span>) and produce CO2 and metabolic waste that need to be processed (<span style="color: darkviolet;">violet arrows</span>). 
 
 ```mermaid
@@ -154,10 +154,10 @@ Design-induced and manufacturing-induced diseases concern DNA or complex biologi
 Operational-induced diseases could regroup diseases that can be caused by consented exposition to risk factors such as not doing physical activity, eating bad food, breathing bad air (smoking). Environmental-induced diseases could regroup diseases that are caused by non-consented exposition to harmful agents such as viral infections, air pollution, radioactivity.
 But hey these are just intuitions, can we take a more quantitative approach to map the main reasons why the machine can break? What are the common risk factors known in the literature for main diseases?
 
-### Risk factors
+## Risk factors
 Common risk factors for major noncommunicable diseases <a href="#ref-11">[11]</a>, <a href="#ref-12">[12]</a> are dietary pattern, physical activity, smoking, air pollution, high blood pressure, obesity, depression, high cholesterol, excess alcohol consumption. Wait, could we reorganize the list please as it seems that there is some overlap here? For example smoking and air pollution are both breathing bad air. From an engineering point of view, it seems that these risk factors can be grouped as out-of-spec input problems and inappropriate command problems.
 
-### Out of specification inputs
+## Out of specification inputs
 Basically there are only two main inputs for the body (skin left aside for simplicity): the air we breathe and the food and liquid we ingest.
 
 ```mermaid
@@ -199,7 +199,7 @@ Bad air leads to a damaged gas exchanger reducing the ability to input O2 to the
 The same applies to food and water where physically, chemically or biologically active agents can affect the digestive system and the other organs through diffusion through the body.
 Agents can also attack the skin barrier (UV), or diffuse through the body (temperature, pressure, radioactivity).
 
-### Inappropriate commands
+## Inappropriate commands
 
 Body failure can happen when the brain commands an effort past its physical capability. At first we might think this happens driven by adrenaline for example during competitions such as in strain injuries <a href="#ref-13">[13]</a>. But more generally this can happen when the brain overestimates the state of its physical capability. This is where it links with keeping a good level of physical activity because if organs are not used they will degrade and will not be able to handle variations that can occur due to infections, change of habits, unexpected external events and will then break. This is where it links with mental health as the level of activity is linked to the ability of the human to stay active and keep motivation for surviving. Another motivation could be reproduction. Beyond physiological needs that maintain the body's homeostasis, meaning optimal functioning <a href="#ref-14">[14]</a>.
 
@@ -218,6 +218,7 @@ One limitation of this field is the lack of representation for cognition, motiva
 
 The body could be viewed as a self-maintaining machine with inputs, outputs and a control system. Failure can be caused by environmental, operational, manufacturing and design-induced diseases. Exposition to harmful physically, chemically or biologically active agents can generate operational-induced (consented exposition) or environmental-induced (non-consented exposition) diseases. Harmful agents can penetrate the body through air, food, water, skin. Organs and other systems of the body can break with out-of-specification inputs (toxic chemicals, wrong concentration, nano/micro-particles) or inappropriate commands in comparison to system capabilities. Hereditary or acquired DNA anomalies can lead to design-induced and manufacturing-induced diseases.
 Lack of motivation for survival or reproduction can lead to consented exposition to harmful agents, lack of physical activity that will in turn lead to diseases with the decrease of system capabilities increasing the risk of inappropriate commands.
+The following chart summarizes where the machine can break ❌.
 
 
 ```mermaid
